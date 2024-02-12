@@ -1,2 +1,108 @@
-<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
-<h1>Mon formulaire de contact</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+<!--   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" /> -->
+  <link rel="stylesheet" href="Portfolio.css" />
+</head>
+
+<style>
+
+  body
+{
+  background: url("test.jpeg") fixed;
+  background-size: 100%;
+  font-family: arial;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+p
+{
+  margin-top:0px;
+  text-align: justify;
+}
+
+.menu-deroulant, .menu-deroulant ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu-deroulant {
+  /* on centre le menu dans la page */
+  text-align: center;
+}
+.menu-deroulant li {
+  /* on place les liens du menu horizontalement */
+  display: inline-block;
+  padding: 0;
+  margin-top: 5px;
+}
+.onglet1 {
+
+  margin-right: 300px;
+
+}
+.menu-deroulant ul li {
+  /* on enlève ce comportement pour les liens du sous menu */
+  display: inherit;
+}
+.menu-deroulant a {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+.menu-deroulant ul {
+  position: absolute;
+  /* on cache les sous menus complètement sur la gauche */
+  left: -999em;
+  text-align: left;
+  z-index: 1000;
+}
+.menu-deroulant li:hover ul {
+  /* Au survol des li du menu on replace les sous menus */
+  left: auto;
+}
+
+</style>
+  
+<body>
+
+  <div class="container">
+  </br>
+  <h1><center>Mon formulairede contact</center></h1>
+</br>
+
+<ul class="menu-deroulant">
+  <!-- <center> -->
+  <li class="onglet1"><a href="#">Projets</a>
+    <ul>
+      <li><a href="#">PPE</a></li>
+      <li><a href="#">Projets perso</a></li>
+      <li><a href="#">TP</a></li>
+    </ul>
+  </li>
+  <li class="onglet2"><a href="#">Stages</a>
+    <ul>
+      <li><a href="#">Stage 2018</a></li>
+      <li><a href="#">Stage 2019</a></li>
+    </ul>
+  </li>
+  <!-- </center> -->
+</ul>
+</br></br></br></br></br></br>
+
+<h2>Nom</h2>
+</br>
+
+<h3>Prenom</h3>
+
+
+<h3>/h3>
+</br>
+</div>
+</body>
+</html>
