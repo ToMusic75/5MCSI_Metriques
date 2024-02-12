@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/contact/")
 def MaPremiereAPI():
-    return "contact.html"
+    return 'contact.html'
                                                                                                                                        
 @app.route('/')
 def hello_world():
