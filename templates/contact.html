@@ -1,49 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta charset="utf-8" />
-<!--   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" /> -->
-</head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulaire de Contact</title>
 <style>
-
-  body
-{
-  background: url("test.jpeg") fixed;
-  background-size: 100%;
-  font-family: arial;
-  color: white;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-}
-
-p
-{
-  margin-top:0px;
-  text-align: justify;
-}
-
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        height: 150px;
+    }
+    
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
 </style>
-  
+</head>
 <body>
 
-  <div class="container">
-  </br>
-  <h1><center>Mon formulaire de contact</center></h1>
-</br>
-</ul>
-</br></br></br></br></br></br>
-
-<h2>Nom</h2>
-</br>
-
-<h3>Prenom</h3>
-
-
-<h3>/h3>
-</br>
+<div class="container">
+    <h2>Contactez-nous</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <input type="submit" value="Envoyer">
+    </form>
 </div>
+
 </body>
 </html>
