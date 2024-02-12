@@ -15,6 +15,10 @@ def MaPremiereAPI():
 def hello_world():
     return render_template('hello.html') #commentaire75020
 
+@app.route("/rapport/")
+def mongraphique():
+    return render_template("graphique.html")
+
 @app.route("/histogramme/")
 def meteo():
     response = urlopen('https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx')
