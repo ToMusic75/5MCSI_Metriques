@@ -7,6 +7,10 @@ import sqlite3
                                                                                                                                        
 app = Flask(__name__) 
 
+@app.route("/histogramme/")
+def mongraphique2():
+    return render_template("histogramme.html")
+
 @app.route("/contact/")
 def MaPremiereAPI():
     return render_template("contact.html")
